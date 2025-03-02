@@ -1,0 +1,39 @@
+{
+  "Next": "Siguiente",
+  "Email": "Correo electrónico",
+  "Enter your email to get full access": "Introduce tu correo electrónico para obtener acceso completo",
+  "Your email": "Tu correo electrónico",
+  "Invalid email": "Correo electrónico inválido",
+  "By continuing I agree with": "Al continuar, acepto",
+  "Privacy policy": "Política de privacidad",
+  "Terms of use": "Términos de uso",
+  "Finding collections for you...": "Buscando colecciones para ti...",
+  "Thank you for supporting us and passing quiz": "Gracias por apoyarnos y completar el cuestionario",
+  "Download my answers": "Descargar mis respuestas",
+  "Retake quiz": "Repetir el cuestionario",
+  "question": {
+    "1": {
+      "title": "¿Cuál es tu idioma preferido?",
+      "subtitle": "Elige el idioma",
+      "options": ["Inglés", "Francés", "Alemán", "Español"]
+    },
+    "2": {
+      "title": "¿Con qué género te identificas?",
+      "subtitle": "Por favor, indica con qué te identificas",
+      "options": ["Femenino", "Masculino", "Otro"]
+    },
+    "3": {
+      "title": "¿Cuál es tu edad?",
+      "options": ["18–29 años", "30–39 años", "40–49 años", "50+"]
+    },
+    "4": {
+      "title": "¿Qué odias más en un libro?",
+      "options": ["Falta de lógica", "Velocidad lenta", "Falta de humor", "Final demasiado genérico"]
+    },
+    "5": {
+      "title": "¿Cuáles son tus temas favoritos?",
+      "subtitle": "Elige hasta 3 temas que te gusten",
+      "options": ["Hombre lobo", "Acción", "Obsesión real", "Multimillonario", "Romance", "Jóvenes adultos", "Chico malo"]
+    }
+  }
+}

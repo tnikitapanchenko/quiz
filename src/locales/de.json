@@ -1,0 +1,39 @@
+{
+  "Next": "Weiter",
+  "Email": "E-Mail",
+  "Enter your email to get full access": "Geben Sie Ihre E-Mail ein, um vollen Zugriff zu erhalten",
+  "Your email": "Ihre E-Mail",
+  "Invalid email": "Ungültige E-Mail",
+  "By continuing I agree with": "Indem Sie fortfahren, stimmen Sie zu",
+  "Privacy policy": "Datenschutzerklärung",
+  "Terms of use": "Nutzungsbedingungen",
+  "Finding collections for you...": "Sammlungen werden für Sie gesucht...",
+  "Thank you for supporting us and passing quiz": "Vielen Dank, dass Sie uns unterstützen und das Quiz bestanden haben",
+  "Download my answers": "Laden Sie meine Antworten herunter",
+  "Retake quiz": "Quiz erneut starten",
+  "question": {
+    "1": {
+      "title": "Welche Sprache bevorzugen Sie?",
+      "subtitle": "Wählen Sie die Sprache",
+      "options": ["Englisch", "Französisch", "Deutsch", "Spanisch"]
+    },
+    "2": {
+      "title": "Mit welchem Geschlecht identifizieren Sie sich?",
+      "subtitle": "Bitte teilen Sie mit, wie Sie sich identifizieren",
+      "options": ["Weiblich", "Männlich", "Andere"]
+    },
+    "3": {
+      "title": "Wie alt sind Sie?",
+      "options": ["18–29 Jahre", "30–39 Jahre", "40–49 Jahre", "50+ Jahre"]
+    },
+    "4": {
+      "title": "Was mögen Sie an einem Buch am wenigsten?",
+      "options": ["Mangel an Logik", "Langsames Tempo", "Mangel an Humor", "Viel zu generisches Ende"]
+    },
+    "5": {
+      "title": "Was sind Ihre Lieblingsthemen?",
+      "subtitle": "Wählen Sie bis zu 3 Themen, die Ihnen gefallen",
+      "options": ["Werwolf", "Action", "Königliche Obsession", "Milliardär", "Romanze", "Junge Erwachsene", "Bad Boy"]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 24px 12px;
+  margin-bottom: 8px;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b003b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-family: "Albert Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+}
+
+.option-btn.selected {
+  background-color: #ff0080;
+}
+
+.bubble-options .option-btn {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 14px;
+}
+
+.option-emoji {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.option-text {
+  line-height: 1.2;
+}
+
+.bubble-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .option-btn:hover {
+    background-color: #5e005e;
+  }
+}

@@ -1,0 +1,47 @@
+.loader-page {
+  background-color: #2b003b;
+  min-height: 100vh;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+.loader-content {
+  margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.loader-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.loader-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    #ff0080 var(--progressDeg),
+    #fff var(--progressDeg)
+  );
+  mask: radial-gradient(closest-side, transparent 70%, black 71%);
+  -webkit-mask: radial-gradient(closest-side, transparent 70%, black 71%);
+}
+
+.loader-inner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 48px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.loader-text {
+  font-size: 18px;
+  margin-top: 8px;
+}

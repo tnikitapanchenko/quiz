@@ -1,0 +1,39 @@
+{
+  "Next": "Suivant",
+  "Email": "E-mail",
+  "Enter your email to get full access": "Entrez votre e-mail pour obtenir un accès complet",
+  "Your email": "Votre e-mail",
+  "Invalid email": "E-mail invalide",
+  "By continuing I agree with": "En continuant, j'accepte",
+  "Privacy policy": "la politique de confidentialité",
+  "Terms of use": "les conditions d'utilisation",
+  "Finding collections for you...": "Recherche de collections pour vous...",
+  "Thank you for supporting us and passing quiz": "Merci de nous soutenir et d'avoir passé le quiz",
+  "Download my answers": "Télécharger mes réponses",
+  "Retake quiz": "Reprendre le quiz",
+  "question": {
+    "1": {
+      "title": "Quelle est votre langue préférée ?",
+      "subtitle": "Choisissez la langue",
+      "options": ["Anglais", "Français", "Allemand", "Espagnol"]
+    },
+    "2": {
+      "title": "À quel genre vous identifiez-vous ?",
+      "subtitle": "Veuillez indiquer comment vous vous identifiez",
+      "options": ["Féminin", "Masculin", "Autre"]
+    },
+    "3": {
+      "title": "Quel est votre âge ?",
+      "options": ["18–29 ans", "30–39 ans", "40–49 ans", "50+ ans"]
+    },
+    "4": {
+      "title": "Qu'est-ce que vous détestez le plus dans un livre ?",
+      "options": ["Manque de logique", "Rythme lent", "Manque d'humour", "Fin trop générique"]
+    },
+    "5": {
+      "title": "Quels sont vos sujets favoris ?",
+      "subtitle": "Choisissez jusqu'à 3 sujets qui vous plaisent",
+      "options": ["Loup-garou", "Action", "Obsession Royale", "Milliardaire", "Romance", "Adolescent", "Mauvais garçon"]
+    }
+  }
+}

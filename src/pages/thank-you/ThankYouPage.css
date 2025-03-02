@@ -1,0 +1,46 @@
+.thankyou-page {
+  background-color: #2b003b;
+  min-height: 100vh;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+.thankyou-content {
+  margin-top: 50%;
+}
+
+.icon {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.download-btn,
+.retake-btn {
+  display: block;
+  margin: 0 auto 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s;
+  font-family: "Albert Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.download-btn {
+  background-color: #f0f;
+}
+
+.retake-btn {
+  background-color: #ff0080;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .download-btn:hover {
+    background-color: #d0c0d0;
+  }
+}

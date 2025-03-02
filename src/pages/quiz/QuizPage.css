@@ -1,0 +1,15 @@
+.quiz-page {
+  background-color: #2b003b;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.quiz-content {
+  padding: 16px;
+}
+
+.options {
+  margin-top: 16px;
+}
+
+

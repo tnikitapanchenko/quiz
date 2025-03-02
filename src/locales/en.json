@@ -1,0 +1,39 @@
+{
+  "Next": "Next",
+  "Email": "Email",
+  "Enter your email to get full access": "Enter your email to get full access",
+  "Your email": "Your email",
+  "Invalid email": "Invalid email",
+  "By continuing I agree with": "By continuing I agree with",
+  "Privacy policy": "Privacy policy",
+  "Terms of use": "Terms of use",
+  "Finding collections for you...": "Finding collections for you...",
+  "Thank you for supporting us and passing quiz": "Thank you for supporting us and passing quiz",
+  "Download my answers": "Download my answers",
+  "Retake quiz": "Retake quiz",
+  "question": {
+    "1": {
+      "title": "What is your preferred language?",
+      "subtitle": "Choose language",
+      "options": ["English", "French", "German", "Spanish"]
+    },
+    "2": {
+      "title": "What gender do you identify with?",
+      "subtitle": "Please share how do you identify yourself",
+      "options": ["Female", "Male", "Other"]
+    },
+    "3": {
+      "title": "What is your age?",
+      "options": ["18–29 years", "30–39 years", "40–49 years", "50+"]
+    },
+    "4": {
+      "title": "What do you hate the most in a book?",
+      "options": ["Lack of logic", "A slow speed", "Lack of humor", "Way too generic ending"]
+    },
+    "5": {
+      "title": "What are your favorite topics?",
+      "subtitle": "Choose up to 3 topics you like",
+      "options": ["Werewolf", "Action", "Royal Obsession", "Billionaire", "Romance", "Young Adult", "Bad Boy"]
+    }
+  }
+}

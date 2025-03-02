@@ -1,0 +1,51 @@
+.email-page {
+  background-color: #2b003b;
+  min-height: 100vh;
+  color: #fff;
+  padding: 16px;
+}
+
+.email-content {
+  text-align: center;
+}
+
+.email-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.email-input.error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  margin-bottom: 8px;
+}
+
+.next-btn {
+  margin-top: 16px;
+  padding: 12px;
+  width: 100%;
+  background-color: #f0f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .next-btn:hover {
+    background-color: #d0c0d0;
+  }
+}
+
+.terms {
+  margin-top: 16px;
+  font-size: 14px;
+}
