@@ -7,13 +7,13 @@ import "./Header.css";
 interface HeaderProps {
   totalQuestions: number;
   onBack: () => void;
-  disableBack?: boolean;
+  hideBackButton?: boolean;
 }
 
 const Header: React.FC<HeaderProps> = ({
   totalQuestions,
   onBack,
-  disableBack,
+  hideBackButton,
 }) => {
   const currentQuestion = useSelector(
     (state: RootState) => state.quiz.currentQuestion
@@ -24,7 +24,10 @@ const Header: React.FC<HeaderProps> = ({
     <header className="header">
       <Container>
         <div className="header-top">
-          <button onClick={onBack} disabled={disableBack} className="back-btn">
+          <button
+            onClick={onBack}
+            className={`back-btn ${hideBackButton ? "hidden" : ""}`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../store";
@@ -9,9 +9,16 @@ import Header from "../../components/header/Header";
 import Container from "../../components/container/Container";
 import OptionButton from "../../components/option-button/OptionButton";
 import NextButton from "../../components/next-button/NextButton";
+import i18n from "../../i18n";
 import useT from "../../hooks/useT";
 import "./QuizPage.css";
-import i18n from "../../i18n";
+
+const languageOptions: Record<string, string> = {
+  English: "en",
+  French: "fr",
+  German: "de",
+  Spanish: "es",
+};
 
 const emojiMap: Record<string, string> = {
   Werewolf: "🐺",
@@ -33,11 +40,17 @@ const QuizPage: React.FC = () => {
   const totalQuestions = questions.length;
   const quizState = useSelector((state: RootState) => state.quiz);
 
-  const question = questions.find((q) => q.id === currentQuestionId);
+  const question = useMemo(
+    () => questions.find((q) => q.id === currentQuestionId),
+    [currentQuestionId]
+  );
   const translatedTitle = t(`question.${question?.id}.title`, {
-    defaultValue: question?.title,
+    defaultValue: question?.title || "",
   });
-  const translatedSubtitle = t(`question.${question?.id}.subtitle`) || "";
+  const translatedSubtitle = t(`question.${question?.id}.subtitle`, {
+    defaultValue: question?.subtitle || "",
+  });
+  const hideBackButton = currentQuestionId === 1 || currentQuestionId === 2;
 
   useEffect(() => {
     if (!question) {
@@ -65,13 +78,7 @@ const QuizPage: React.FC = () => {
 
   const handleSelectOption = (option: string) => {
     if (question.id === 1) {
-      const languageMap: Record<string, string> = {
-        English: "en",
-        French: "fr",
-        German: "de",
-        Spanish: "es",
-      };
-      const langCode = languageMap[option] || "en";
+      const langCode = languageOptions[option] || "en";
       dispatch(setLanguage(langCode));
       i18n.changeLanguage(langCode);
     }
@@ -109,22 +116,12 @@ const QuizPage: React.FC = () => {
       <Header
         totalQuestions={totalQuestions}
         onBack={handleBack}
-        disableBack={currentQuestionId === 1}
+        hideBackButton={hideBackButton}
       />
       <Container>
         <div className="quiz-content">
-          <h2>
-            {translatedTitle === `question.${question.id}.title`
-              ? question.title
-              : translatedTitle}
-          </h2>
-          {question.subtitle && (
-            <p>
-              {translatedSubtitle === `question.${question.id}.title`
-                ? question.subtitle
-                : translatedSubtitle}
-            </p>
-          )}
+          <h2>{translatedTitle}</h2>
+          {question.subtitle && <p>{translatedSubtitle}</p>}
           <div
             className={`options ${
               currentQuestionId === 5 ? "bubble-options" : ""
