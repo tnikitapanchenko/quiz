@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import QuizPage from "./pages/quiz/QuizPage";
 import EmailPage from "./pages/email/EmailPage";
